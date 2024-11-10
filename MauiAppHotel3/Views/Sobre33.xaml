@@ -1,0 +1,26 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel3.Views.Sobre33"
+             BackgroundColor="White">
+
+    <StackLayout Padding="20" Spacing="20" HorizontalOptions="Start" VerticalOptions="Center">
+
+        <Label Text="Sobre"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               TextColor="#8A5F36" 
+               FontAttributes="Bold"/>
+        
+        <Label Text="Desenvolvedor: Matheus Fernandes de Toledo"
+               FontSize="Medium"
+               TextColor="#8A5F36"
+               HorizontalTextAlignment="Start" />
+
+
+        <Label Text="Ano de Desenvolvimento: 2024"
+               FontSize="Medium"
+               TextColor="#8A5F36"
+               HorizontalTextAlignment="Start" />
+
+    </StackLayout>
+</ContentPage>
