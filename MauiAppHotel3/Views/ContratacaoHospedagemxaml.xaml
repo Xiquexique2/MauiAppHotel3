@@ -4,7 +4,7 @@
              x:Class="MauiAppHotel3.Views.ContratacaoHospedagemxaml"
              Title="ContratacaoHospedagem"
              NavigationPage.HasNavigationBar="False"
-             BackgroundColor="#FFFFFF">
+             BackgroundColor="{StaticResource Gray100}">
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10"
@@ -13,8 +13,8 @@
         <Label Text="Cálculo da Diária"
                FontFamily="Kalam"
                FontSize="50"
-               TextColor="#8A5F36" 
-               FontAttributes="Bold" />
+               TextColor="#8A5F36"
+               FontAttributes="Bold"/>
 
         <Frame Padding="10">
             <VerticalStackLayout>
@@ -59,13 +59,14 @@
                                TextColor="#8A5F36"/>
 
                         <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação" />
+                                Title="Selecione sua Acomodação"
+                                ItemDisplayBinding="{Binding Descricao}"/>
                     </VerticalStackLayout>
                 </Frame>
 
-                <Frame Padding="10"
-                       Margin="10">
-                    <VerticalStackLayout Spacing="10">
+                <Frame Padding="15"
+                       Margin="20">
+                    <VerticalStackLayout Spacing="15">
 
                         <Label Text="Período da Estadia"
                                TextTransform="Uppercase"
@@ -75,6 +76,7 @@
                         <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
 
@@ -91,7 +93,8 @@
                 Padding="10"
                 Margin="10"
                 BackgroundColor="#8A5F36"        
-                FontAttributes="Bold"/>        
+                FontAttributes="Bold"
+                Clicked="Button_Clicked"        />
 
 
 
@@ -101,11 +104,9 @@
                 Margin="10"        
                 BackgroundColor="#8A5F36"  
                 FontAttributes="Bold" 
-                Clicked="Sobre33_Clicked"/>     
-             
-                        
-
-            </VerticalStackLayout>
+                Clicked="Sobre33_Clicked"/>
+      
+                </VerticalStackLayout>
         </Frame>
 
     </VerticalStackLayout>

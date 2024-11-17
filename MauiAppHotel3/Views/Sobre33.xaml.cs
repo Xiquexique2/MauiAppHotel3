@@ -7,4 +7,4 @@ public partial class Sobre33 : ContentPage
 	{
 		InitializeComponent();
 	}
-	
+}
